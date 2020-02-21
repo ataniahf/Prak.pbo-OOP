@@ -1,23 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package main;
 
-/**
- *
- * @author Lab Informatika
- */
-public class Main 
-{
+package polymorphism;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args)
-    {
-        
-    }
-    
+public class Main {
+  public static void main(String[] args){
+  Hewan hewanAnonim= new Hewan(" Anonim");
+  hewanAnonim.makan();
+  Hewan hewan1 = new Herbivora(" Kelinci");
+  hewan1.makan();
+  Hewan hewan2 = new Karnivora(" Harimau");
+  hewan2.makan();
+  Hewan hewan3 = new Omnivora (" Kucing");
+  hewan3.makan();
+  }  
 }
